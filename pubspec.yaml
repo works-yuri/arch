@@ -1,0 +1,17 @@
+name: workspace
+publish_to: none
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dev_dependencies:
+  cmd:
+
+workspace:
+  - tools/cmd
+  - framework
+  - bootstrap
+  - application
+  - shared/api
+  - shared/ui
+  - shared/validation

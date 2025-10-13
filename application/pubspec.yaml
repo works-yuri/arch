@@ -1,0 +1,16 @@
+name: application
+
+resolution: workspace
+
+version: 0.0.1+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_ui:
+  # Bloc
+  bloc:
+  flutter_bloc:

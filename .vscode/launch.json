@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Development",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "program": "framework/lib/main.dart",
+      "args": [
+        "--dart-define-from-file",
+        "${workspaceFolder}/application/assets/environment.json"
+      ]
+    },    
+    {
+      "name": "Profile",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "program": "framework/lib/main.dart",
+      "args": [
+        "--dart-define-from-file",
+        "env/staging.json"
+      ]
+    },
+  ]
+}
