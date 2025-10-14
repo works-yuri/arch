@@ -264,6 +264,12 @@
       "rootUri": "../shared/validation",
       "packageUri": "lib/",
       "languageVersion": "3.8"
+    },
+    {
+      "name": "shared_analytics",
+      "rootUri": "../shared/analytics",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
     }
   ],
   "generator": "pub",

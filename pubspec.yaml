@@ -15,3 +15,4 @@ workspace:
   - shared/api
   - shared/ui
   - shared/validation
+  - shared/analytics

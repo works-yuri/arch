@@ -4,6 +4,7 @@
     "cmd",
     "configuration",
     "framework",
+    "shared_analytics",
     "shared_api",
     "shared_ui",
     "shared_validation",
@@ -56,6 +57,7 @@
         "bloc",
         "flutter",
         "flutter_bloc",
+        "shared_analytics",
         "shared_ui"
       ],
       "devDependencies": []
@@ -74,6 +76,12 @@
     },
     {
       "name": "shared_validation",
+      "version": "0.0.1+1",
+      "dependencies": [],
+      "devDependencies": []
+    },
+    {
+      "name": "shared_analytics",
       "version": "0.0.1+1",
       "dependencies": [],
       "devDependencies": []
