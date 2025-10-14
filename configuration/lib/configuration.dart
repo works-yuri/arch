@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 
-import 'package:configuration/dependency/dependency.dart';
+import 'package:configuration/dependencies/dependencies.dart';
 import 'package:flutter/material.dart' hide Router;
 import 'package:configuration/navigation/navigation.dart';
 
@@ -18,7 +18,7 @@ import 'dart:developer' as developer;
 class Configuration {
   final log = Logger('Configuration');
   final navigation = Navigation();
-  final dependency = Dependency();
+  final dependencies = Dependencies();
 
   Configuration.setup() {
     Logger.root.onRecord.listen((record) {
@@ -51,7 +51,7 @@ class Configuration {
           DeviceOrientation.portraitDown,
         ]);
 
-        await dependency.wait();
+        await dependencies.wait();
 
         runApp(
           Builder(
