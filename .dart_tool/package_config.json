@@ -237,7 +237,7 @@
     },
     {
       "name": "bootstrap",
-      "rootUri": "../bootstrap",
+      "rootUri": "../configuration",
       "packageUri": "lib/",
       "languageVersion": "3.8"
     },

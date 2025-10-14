@@ -10,7 +10,7 @@ dev_dependencies:
 workspace:
   - tools/cmd
   - framework
-  - bootstrap
+  - configuration
   - application
   - shared/api
   - shared/ui
