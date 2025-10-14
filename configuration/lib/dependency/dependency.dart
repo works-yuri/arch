@@ -6,7 +6,7 @@ abstract class LocatorProvider {
   Future<void> register(GetIt it);
 }
 
-class Container {
+class Dependency {
   Future<void> wait() async {
     for (final provider in providers) {
       try {

@@ -1,8 +1,8 @@
 {
   "roots": [
     "application",
-    "bootstrap",
     "cmd",
+    "configuration",
     "framework",
     "shared_api",
     "shared_ui",
@@ -30,7 +30,7 @@
       "name": "framework",
       "version": "0.0.1+1",
       "dependencies": [
-        "bootstrap",
+        "configuration",
         "cupertino_icons",
         "flutter"
       ],
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "name": "bootstrap",
+      "name": "configuration",
       "version": "0.0.1+1",
       "dependencies": [
         "application",

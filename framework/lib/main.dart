@@ -1,3 +1,3 @@
-import 'package:bootstrap/bootstrap.dart';
+import 'package:configuration/configuration.dart';
 
-void main() => Bootstrap.setup();
+void main() => Configuration.setup();

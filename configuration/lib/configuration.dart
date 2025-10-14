@@ -1,8 +1,9 @@
 import 'dart:async';
 import 'dart:ui';
 
+import 'package:configuration/dependency/dependency.dart';
 import 'package:flutter/material.dart' hide Router;
-import 'package:bootstrap/navigation/navigation.dart';
+import 'package:configuration/navigation/navigation.dart';
 
 import 'package:flutter/services.dart';
 
@@ -14,12 +15,12 @@ import 'dart:developer' as developer;
 //           Level.WARNING; // Don't log anything below warnings in production.
 //     }
 
-class Bootstrap {
-  final log = Logger('Bootstrap');
+class Configuration {
+  final log = Logger('Configuration');
   final navigation = Navigation();
-  final container = Container();
+  final dependency = Dependency();
 
-  Bootstrap.setup() {
+  Configuration.setup() {
     Logger.root.onRecord.listen((record) {
       developer.log(
         record.message,
@@ -50,7 +51,7 @@ class Bootstrap {
           DeviceOrientation.portraitDown,
         ]);
 
-        await container.setup();
+        await dependency.wait();
 
         runApp(
           Builder(
