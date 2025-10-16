@@ -270,6 +270,12 @@
       "rootUri": "../shared/analytics",
       "packageUri": "lib/",
       "languageVersion": "3.8"
+    },
+    {
+      "name": "shared_localization",
+      "rootUri": "../shared/localization",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
     }
   ],
   "generator": "pub",

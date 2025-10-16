@@ -20,5 +20,9 @@ class Dependencies {
     await locator.allReady();
   }
 
+  Future<void> reset() async {
+    await locator.reset();
+  }
+
   final List<LocatorProvider> providers = [];
 }

@@ -16,3 +16,4 @@ workspace:
   - shared/ui
   - shared/validation
   - shared/analytics
+  - shared/localization

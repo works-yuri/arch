@@ -6,6 +6,7 @@
     "framework",
     "shared_analytics",
     "shared_api",
+    "shared_localization",
     "shared_ui",
     "shared_validation",
     "workspace"
@@ -82,6 +83,12 @@
     },
     {
       "name": "shared_analytics",
+      "version": "0.0.1+1",
+      "dependencies": [],
+      "devDependencies": []
+    },
+    {
+      "name": "shared_localization",
       "version": "0.0.1+1",
       "dependencies": [],
       "devDependencies": []

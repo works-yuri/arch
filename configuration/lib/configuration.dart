@@ -15,6 +15,11 @@ import 'dart:developer' as developer;
 //           Level.WARNING; // Don't log anything below warnings in production.
 //     }
 
+// do not show the red error widget when release mode
+// if (kReleaseMode) {
+//   ErrorWidget.builder = (FlutterErrorDetails details) => Container();
+// }
+
 class Configuration {
   final log = Logger('Configuration');
   final navigation = Navigation();
@@ -51,6 +56,7 @@ class Configuration {
           DeviceOrientation.portraitDown,
         ]);
 
+        await dependencies.reset();
         await dependencies.wait();
 
         runApp(
