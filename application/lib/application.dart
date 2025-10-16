@@ -1,2 +1,2 @@
-export 'screens/onboarding/widgets/onboarding.dart';
-export 'screens/dashboard/widgets/dashboard.dart';
+export 'src/screens/onboarding/widgets/onboarding.dart';
+export 'src/screens/dashboard/widgets/dashboard.dart';
