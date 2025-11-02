@@ -25,3 +25,15 @@ final response = await client.execute<SingInResponse>(request);
 final profile = await client.execute<ProfileResponse>(ReadProfile());
 
 ```
+
+## Tree
+
+```bash
+lib
+    - src
+        - client
+        - common
+        - requests
+        - responses
+    - shared_api.dart
+```
