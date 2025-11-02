@@ -9,17 +9,19 @@ class SignInWithUsernameAndPassword extends ClientRequest<SingInResponse> {
 
   final String username;
 
+  final String country;
+
   SignInWithUsernameAndPassword({
     required this.password,
     required this.username,
+    required this.country,
   });
 
   @override
   HttpOptions onRequest(SharedApiCredentials credentials) {
-    return HttpOptions(
-      path: '/o/token',
-      method: HttpMethod.POST,
-      data: HttpData.multipart({
+    return HttpOptions.post(
+      '/o/token',
+      HttpData.multipart({
         'client_id': credentials.clientID,
         'device_id': 0,
         'grant_type': 'password',

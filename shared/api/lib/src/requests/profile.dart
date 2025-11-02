@@ -6,7 +6,7 @@ import '/src/responses/profile.dart';
 class ReadProfile extends ClientRequest<ProfileResponse> {
   @override
   HttpOptions onRequest(SharedApiCredentials credential) {
-    return HttpOptions(path: '/v2/profile', method: HttpMethod.GET);
+    return HttpOptions.get('/v2/profile');
   }
 
   ProfileResponse onResponse(HttpResponse response) {

@@ -11,10 +11,9 @@ class RefreshToken extends ClientRequest<SingInResponse> {
 
   @override
   HttpOptions onRequest(SharedApiCredentials credentials) {
-    return HttpOptions(
-      path: '/o/token',
-      method: HttpMethod.POST,
-      data: HttpData.multipart({
+    return HttpOptions.post(
+      '/o/token',
+      HttpData.multipart({
         'client_id': credentials.clientID,
         'grant_type': 'refresh_token',
         'refresh_token': token,
